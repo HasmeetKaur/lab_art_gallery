@@ -24,5 +24,13 @@ public class Gallery {
         this.till += artwork.getPrice();
         this.collection.remove(artwork);
     }
+
+    public float stockTake() {
+        float totalCollectionValue = 0;
+        for (Artwork artwork : collection) {
+            totalCollectionValue += artwork.getPrice();
+        }
+        return totalCollectionValue;
+    }
 }
 

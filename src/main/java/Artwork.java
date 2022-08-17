@@ -13,4 +13,8 @@ public class Artwork {
     }
 
     public float getPrice() {return price; }
+    
+    public String getTitle() {
+        return title;
+    }
 }

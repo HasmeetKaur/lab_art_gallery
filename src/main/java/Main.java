@@ -15,14 +15,21 @@ public class Main {
         impossibleArtwork.addArtwork(starryNight);
         impossibleArtwork.addArtwork(theLastSupper);
 
+        System.out.println("The total value of all the gallery's artwork is " + impossibleArtwork.stockTake());
+
         Customer mary = new Customer("Mary", 500000);
 
         mary.buyArtwork(impossibleArtwork, monaLisa);
-        System.out.println(mary.getWallet());
 
-        System.out.println();
+        System.out.println("The total value of all the gallery's artwork is " + impossibleArtwork.stockTake());
 
+        impossibleArtwork.collection.forEach(artwork -> {
+            System.out.println("Impossible Artwork's collection includes " + artwork.getTitle());
+        });
 
+        mary.collection.forEach(artwork -> {
+            System.out.println("Mary's collection includes " + artwork.getTitle());
+        });
 
     }
 }
