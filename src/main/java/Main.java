@@ -11,6 +11,18 @@ public class Main {
 
         Gallery impossibleArtwork = new Gallery("Impossible Artwork", 300);
 
-        //add artwork to collection
+        impossibleArtwork.addArtwork(monaLisa);
+        impossibleArtwork.addArtwork(starryNight);
+        impossibleArtwork.addArtwork(theLastSupper);
+
+        Customer mary = new Customer("Mary", 500000);
+
+        mary.buyArtwork(impossibleArtwork, monaLisa);
+        System.out.println(mary.getWallet());
+
+        System.out.println();
+
+
+
     }
 }
