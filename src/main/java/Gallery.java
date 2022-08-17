@@ -12,6 +12,22 @@ public class Gallery {
         this.collection = new ArrayList<> ();
     }
 
+    public String getName(){
+        return name;
+    }
+
+    public float getTill(){
+        return till;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setTill(float till) {
+        this.till = till;
+    }
+
     public void addArtwork(Artwork artwork) {
         this.collection.add(artwork);
     }

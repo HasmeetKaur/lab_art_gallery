@@ -12,6 +12,18 @@ public class Customer {
         this.collection = new ArrayList<> ();
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setWallet(float wallet) {
+        this.wallet = wallet;
+    }
+
     public float getWallet() {
         return wallet;
     }
@@ -22,7 +34,7 @@ public class Customer {
             this.wallet -= artwork.getPrice();
             this.collection.add(artwork);
         } else {
-            System.out.println("Sorry get a loan.");
+            System.out.println("Sorry, get a loan.");
         }
     }
 }

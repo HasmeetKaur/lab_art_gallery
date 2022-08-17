@@ -12,9 +12,15 @@ public class Artwork {
         this.nft = nft;
     }
 
-    public float getPrice() {return price; }
-    
     public String getTitle() {
         return title;
+    }
+
+    public String getNft(){
+        return nft;
+    }
+
+    public float getPrice() {
+        return price;
     }
 }
